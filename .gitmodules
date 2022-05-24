@@ -1,0 +1,6 @@
+[submodule "ASP-Core-Web-Api-Practice-1.Contracts"]
+	path = ASP-Core-Web-Api-Practice-1.Contracts
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Contracts
+[submodule "ASP-Core-Web-Api-Practice-1.LoggerService"]
+	path = ASP-Core-Web-Api-Practice-1.LoggerService
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.LoggerService
