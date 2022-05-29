@@ -4,3 +4,6 @@
 [submodule "ASP-Core-Web-Api-Practice-1.LoggerService"]
 	path = ASP-Core-Web-Api-Practice-1.LoggerService
 	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.LoggerService
+[submodule "ASP-Core-Web-Api-Practice-1.Repository"]
+	path = ASP-Core-Web-Api-Practice-1.Repository
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Repository.git
