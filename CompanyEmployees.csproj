@@ -7,6 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="nlog.config" />
   </ItemGroup>
 
@@ -15,11 +34,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog.Schema" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LoggerService\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="..\Repository\Repository\Repository.csproj" />
   </ItemGroup>
 
 </Project>
