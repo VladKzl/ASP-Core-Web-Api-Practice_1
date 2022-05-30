@@ -45,8 +45,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LoggerService\LoggerService\LoggerService.csproj" />
-    <ProjectReference Include="..\Repository\Repository\Repository.csproj" />
+    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Repository\Repository.csproj" />
   </ItemGroup>
 
 </Project>
