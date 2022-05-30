@@ -6,4 +6,7 @@ bin
 obj
 packages
 Profiles
-test
+ASP-Core-Web-Api-Practice-1.Repository/
+ASP-Core-Web-Api-Practice-1.LoggerService/
+ASP-Core-Web-Api-Practice-1.Entities/
+ASP-Core-Web-Api-Practice-1.Contracts/
