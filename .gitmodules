@@ -7,3 +7,6 @@
 [submodule "ASP-Core-Web-Api-Practice-1.Repository"]
 	path = ASP-Core-Web-Api-Practice-1.Repository
 	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Repository.git
+[submodule "ASP-Core-Web-Api-Practice-1.Entities"]
+	path = ASP-Core-Web-Api-Practice-1.Entities
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Entities.git

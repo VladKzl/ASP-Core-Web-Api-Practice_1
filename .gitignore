@@ -6,7 +6,3 @@ bin
 obj
 packages
 Profiles
-ASP-Core-Web-Api-Practice-1.Repository/
-ASP-Core-Web-Api-Practice-1.LoggerService/
-ASP-Core-Web-Api-Practice-1.Entities/
-ASP-Core-Web-Api-Practice-1.Contracts/
