@@ -10,3 +10,9 @@
 [submodule "ASP-Core-Web-Api-Practice-1.Entities"]
 	path = ASP-Core-Web-Api-Practice-1.Entities
 	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Entities.git
+[submodule "ASP-Core-Web-Api-Practice-1.Service"]
+	path = ASP-Core-Web-Api-Practice-1.Service
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Service.git
+[submodule "ASP-Core-Web-Api-Practice-1.Service.Contracts"]
+	path = ASP-Core-Web-Api-Practice-1.Service.Contracts
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Service.Contracts.git

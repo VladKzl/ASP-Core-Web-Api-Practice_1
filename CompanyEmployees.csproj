@@ -11,18 +11,26 @@
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +55,8 @@
   <ItemGroup>
     <ProjectReference Include="ASP-Core-Web-Api-Practice-1.LoggerService\LoggerService.csproj" />
     <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Repository\Repository.csproj" />
+    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service.Contracts\Service.Contracts.csproj" />
+    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service\Service.csproj" />
   </ItemGroup>
 
 </Project>
