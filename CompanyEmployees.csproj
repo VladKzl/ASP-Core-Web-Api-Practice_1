@@ -15,24 +15,40 @@
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Compile Remove="Presentation\bin\**" />
+    <Compile Remove="Presentation\obj\**" />
+    <Compile Remove="Новая папка\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Content Remove="Presentation\bin\**" />
+    <Content Remove="Presentation\obj\**" />
+    <Content Remove="Новая папка\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <EmbeddedResource Remove="Presentation\bin\**" />
+    <EmbeddedResource Remove="Presentation\obj\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <None Remove="Presentation\bin\**" />
+    <None Remove="Presentation\obj\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AssemblyReference.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +57,14 @@
 
   <ItemGroup>
     <None Include="nlog.config" />
+    <None Include="Presentation\.vs\Presentation\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="Presentation\.vs\Presentation\FileContentIndex\815f74ca-0b3d-4935-9a4b-03b885173f2a.vsidx" />
+    <None Include="Presentation\.vs\Presentation\FileContentIndex\read.lock" />
+    <None Include="Presentation\.vs\Presentation\v17\.futdcache.v1" />
+    <None Include="Presentation\.vs\Presentation\v17\.suo" />
+    <None Include="Presentation\.vs\ProjectEvaluation\presentation.metadata.v2" />
+    <None Include="Presentation\.vs\ProjectEvaluation\presentation.projects.v2" />
+    <None Include="Presentation\Presentation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +83,7 @@
     <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Repository\Repository.csproj" />
     <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service.Contracts\Service.Contracts.csproj" />
     <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service\Service.csproj" />
+    <ProjectReference Include="Presentation\Presentation.csproj" />
   </ItemGroup>
 
 </Project>
