@@ -20,7 +20,7 @@ namespace CompanyEmployees.Presentation.Controllers
             }
             catch
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal Server Error!");
             }
         }
     }
