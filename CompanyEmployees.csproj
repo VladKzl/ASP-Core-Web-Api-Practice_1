@@ -15,6 +15,7 @@
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <Compile Remove="Presentation\bin\**" />
     <Compile Remove="Presentation\obj\**" />
     <Compile Remove="Новая папка\**" />
@@ -24,6 +25,7 @@
     <Content Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <Content Remove="Presentation\bin\**" />
     <Content Remove="Presentation\obj\**" />
     <Content Remove="Новая папка\**" />
@@ -33,6 +35,7 @@
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <EmbeddedResource Remove="Presentation\bin\**" />
     <EmbeddedResource Remove="Presentation\obj\**" />
     <EmbeddedResource Remove="Новая папка\**" />
@@ -42,6 +45,7 @@
     <None Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <None Remove="Presentation\bin\**" />
     <None Remove="Presentation\obj\**" />
     <None Remove="Новая папка\**" />
