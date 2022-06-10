@@ -6,7 +6,7 @@ bin
 obj
 packages
 Profiles
-internallog.txt
+internal_logs/
 ASP-Core-Web-Api-Practice-1.Contracts/
 ASP-Core-Web-Api-Practice-1.Entities/
 ASP-Core-Web-Api-Practice-1.LoggerService/
