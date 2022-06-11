@@ -7,10 +7,3 @@ obj
 packages
 Profiles
 internal_logs/
-ASP-Core-Web-Api-Practice-1.Contracts/
-ASP-Core-Web-Api-Practice-1.Entities/
-ASP-Core-Web-Api-Practice-1.LoggerService/
-ASP-Core-Web-Api-Practice-1.Repository/
-ASP-Core-Web-Api-Practice-1.Service/
-ASP-Core-Web-Api-Practice-1.Service.Contracts/
-ASP-Core-Web-Api-Practice-1.Shared/
