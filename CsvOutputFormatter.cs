@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Net.Http.Headers;
 using Shared.DataTransferObjects;
-using System.Net.Http.Headers;
 using System.Text;
 
 namespace CompanyEmployees
@@ -9,7 +9,7 @@ namespace CompanyEmployees
     {
         public CsvOutputFormatter()
         {
-            /*SupportedMediaTypes.Add(MediaTypeHeaderValue.Parse("text/csv"));*/
+            SupportedMediaTypes.Add(MediaTypeHeaderValue.Parse("text/csv"));
             SupportedEncodings.Add(Encoding.UTF8);
             SupportedEncodings.Add(Encoding.Unicode);
         }
