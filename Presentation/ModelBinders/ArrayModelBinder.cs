@@ -10,7 +10,7 @@ namespace CompanyEmployees.Presentation.ModelBinders
         {
             if (!bindingContext.ModelMetadata.IsEnumerableType)
             {
-            bindingContext.Result = ModelBindingResult.Failed();
+                bindingContext.Result = ModelBindingResult.Failed();
                 return Task.CompletedTask;
             }
             var providedValue = bindingContext.ValueProvider
