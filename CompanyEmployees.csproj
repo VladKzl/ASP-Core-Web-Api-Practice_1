@@ -18,7 +18,6 @@
     <Compile Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <Compile Remove="Presentation\bin\**" />
     <Compile Remove="Presentation\obj\**" />
-    <Compile Remove="Новая папка\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <Content Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
@@ -28,7 +27,6 @@
     <Content Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <Content Remove="Presentation\bin\**" />
     <Content Remove="Presentation\obj\**" />
-    <Content Remove="Новая папка\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
@@ -38,7 +36,6 @@
     <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <EmbeddedResource Remove="Presentation\bin\**" />
     <EmbeddedResource Remove="Presentation\obj\**" />
-    <EmbeddedResource Remove="Новая папка\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
     <None Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
@@ -48,7 +45,6 @@
     <None Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
     <None Remove="Presentation\bin\**" />
     <None Remove="Presentation\obj\**" />
-    <None Remove="Новая папка\**" />
   </ItemGroup>
 
   <ItemGroup>
