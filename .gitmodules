@@ -16,3 +16,6 @@
 [submodule "ASP-Core-Web-Api-Practice-1.Service.Contracts"]
 	path = ASP-Core-Web-Api-Practice-1.Service.Contracts
 	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Service.Contracts.git
+[submodule "ASP-Core-Web-Api-Practice-1.Shared"]
+	path = ASP-Core-Web-Api-Practice-1.Shared
+	url = https://github.com/VladKzl/ASP-Core-Web-Api-Practice-1.Shared.git
