@@ -1,0 +1,9 @@
+*.suo
+*.user
+Logs
+Sql
+bin
+obj
+packages
+Profiles
+test

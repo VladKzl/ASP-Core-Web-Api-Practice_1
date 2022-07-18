@@ -15,7 +15,7 @@ namespace CompanyEmployees.Presentation.Controllers
         private readonly IServiceManager _service;
         public EmployeesController(IServiceManager service) => _service = service;
 
-        [HttpGet]
+        [HttpGet] // Нужен фильтр
         public async Task<IActionResult> GetEmployeesForCompany(Guid companyId,
         [FromQuery] EmployeeParameters employeeParameters)
         {
@@ -63,7 +63,7 @@ namespace CompanyEmployees.Presentation.Controllers
             compTrackChanges: false, empTrackChanges: true);
             return NoContent();
         }
-        [HttpPatch("{id:guid}")]
+        [HttpPatch("{id:guid}")] // Нужен фильтр
         public async Task<IActionResult> PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id,
         [FromBody] JsonPatchDocument<EmployeeForUpdateDto> patchDoc)
         {

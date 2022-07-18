@@ -43,8 +43,7 @@ namespace CompanyEmployees.Presentation.Controllers
             return CreatedAtRoute("CompanyById", new { id = createdCompany.Id },
             createdCompany);
         }
-
-        [HttpPost("collection")]
+        [HttpPost("collection")] // нужен фильтр
         public async Task<IActionResult> CreateCompanyCollection
         ([FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
         {

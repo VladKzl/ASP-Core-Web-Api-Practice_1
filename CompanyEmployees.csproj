@@ -80,10 +80,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.LoggerService\LoggerService.csproj" />
-    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Repository\Repository.csproj" />
-    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service.Contracts\Service.Contracts.csproj" />
-    <ProjectReference Include="ASP-Core-Web-Api-Practice-1.Service\Service.csproj" />
+    <ProjectReference Include="Dependent Projects\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="Dependent Projects\Repository\Repository.csproj" />
+    <ProjectReference Include="Dependent Projects\Service.Contracts\Service.Contracts.csproj" />
+    <ProjectReference Include="Dependent Projects\Service\Service.csproj" />
   </ItemGroup>
 
 </Project>
