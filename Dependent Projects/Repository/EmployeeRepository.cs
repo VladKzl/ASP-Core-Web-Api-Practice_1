@@ -24,6 +24,7 @@ namespace Repository
             trackChanges)
             .FilterEmployees(employeeParameters.MinAge, employeeParameters.MaxAge)
             .Search(employeeParameters.SearchTerm)
+            .Sort(employeeParameters.OrderBy)
             .OrderBy(e => e.Name)
             .ToListAsync();
             return PagedList<Employee>
