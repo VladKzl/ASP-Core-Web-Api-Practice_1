@@ -23,5 +23,6 @@ namespace Shared.RequestFeatures
             }
         }
         public string? OrderBy { get; set; } // Сортировка 
+        public string? Fields { get; set; } // Data Shaping
     }
 }
