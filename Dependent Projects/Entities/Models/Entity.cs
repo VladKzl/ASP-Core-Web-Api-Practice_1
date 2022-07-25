@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace Entities.Models
 {
-    public class Entity
+    public class Entity // Не понятно как работает класс, нужен для XML output
     {
         private void WriteLinksToXml(string key, object value, XmlWriter writer)
         {
