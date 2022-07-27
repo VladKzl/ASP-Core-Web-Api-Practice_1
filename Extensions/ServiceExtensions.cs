@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using LoggerService;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +35,18 @@ namespace CompanyEmployees.Extensions
         IConfiguration configuration) =>
         services.AddDbContext<RepositoryContext>(opts =>
         opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
+        public static void ConfigureResponseCaching(this IServiceCollection services) =>
+        services.AddResponseCaching();
+        public static void ConfigureHttpCacheHeaders(this IServiceCollection services) =>
+        services.AddHttpCacheHeaders((expirationOpt) =>
+        {
+            expirationOpt.MaxAge = 100;
+            expirationOpt.CacheLocation = CacheLocation.Private;
+        },
+        (validationOpt) =>
+        {
+        validationOpt.MustRevalidate = true;
+        });
         public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
         builder.AddMvcOptions(config => config.OutputFormatters.Add(new
         CsvOutputFormatter()));
