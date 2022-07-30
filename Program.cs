@@ -10,6 +10,7 @@ using Shared.DataTransferObjects;
 using Service.DataShaping;
 using CompanyEmployees.Presentation.ActionFilters;
 using CompanyEmployees.Utility;
+using AspNetCoreRateLimit;
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
 new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
@@ -28,9 +29,17 @@ builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureVersioning();
+builder.Services.ConfigureSwagger();
+
 builder.Services.ConfigureResponseCaching();
 builder.Services.ConfigureHttpCacheHeaders();
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddMemoryCache();
+
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -68,9 +77,16 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.All
 });
+app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
 app.UseResponseCaching();
 app.UseHttpCacheHeaders();
 app.UseAuthorization();
 app.MapControllers();
+app.UseSwagger();
+app.UseSwaggerUI(s =>
+{
+    s.SwaggerEndpoint("/swagger/v1/swagger.json", "Code Maze API v1");
+    s.SwaggerEndpoint("/swagger/v2/swagger.json", "Code Maze API v2");
+});
 app.Run();
