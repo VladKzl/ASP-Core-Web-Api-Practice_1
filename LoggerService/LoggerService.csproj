@@ -3,14 +3,14 @@
 	<PropertyGroup>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="5.0.0" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="NLog" Version="5.3.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.14" />
   </ItemGroup>
 
   <ItemGroup>
