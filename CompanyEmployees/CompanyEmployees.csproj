@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9a743471-4041-4875-90d5-9ff12fcfdfcc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Compile Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
+    <Compile Remove="Presentation\.vs\**" />
+    <Compile Remove="Presentation\bin\**" />
+    <Compile Remove="Presentation\obj\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <Content Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
+    <Content Remove="Presentation\.vs\**" />
+    <Content Remove="Presentation\bin\**" />
+    <Content Remove="Presentation\obj\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <EmbeddedResource Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
+    <EmbeddedResource Remove="Presentation\.vs\**" />
+    <EmbeddedResource Remove="Presentation\bin\**" />
+    <EmbeddedResource Remove="Presentation\obj\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Contracts\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Entities\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.LoggerService\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Repository\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Service.Contracts\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Service\**" />
+    <None Remove="ASP-Core-Web-Api-Practice-1.Shared\**" />
+    <None Remove="Presentation\.vs\**" />
+    <None Remove="Presentation\bin\**" />
+    <None Remove="Presentation\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AssemblyReference.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Presentation\Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+    <PackageReference Include="Marvin.Cache.Headers" Version="7.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog.Schema" Version="5.3.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\Service.Contracts\Service.Contracts.csproj" />
+    <ProjectReference Include="..\Service\Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="%25USERPROFILE%25.aspnethttpscompanyemployees.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="companyemployees.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
