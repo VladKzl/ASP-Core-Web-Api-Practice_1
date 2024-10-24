@@ -11,7 +11,7 @@
   "profiles": {
     "CompanyEmployees": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "dotnetRunMessages": true,
@@ -21,7 +21,7 @@
     },
     "Docker": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "dotnetRunMessages": false,
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "http://0.0.0.0:5000",

@@ -13,8 +13,9 @@ using CompanyEmployees.Utility;
 using AspNetCoreRateLimit;
 using System.Reflection.Metadata.Ecma335;
 
-
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.UseUrls("https://0.0.0.0:5001", "http://0.0.0.0:5000");
 
 LogManager.Setup().LoadConfigurationFromFile(Path.Combine(Directory.GetCurrentDirectory(), "nlog.config"));
 builder.Services.ConfigureLoggerService();
@@ -25,13 +26,13 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureSwagger();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.ConfigureIdentity();
-builder.Services.AddJwtConfiguration(builder.Configuration);
-builder.Services.ConfigureJWT(builder.Configuration);
-
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
+
+builder.Services.ConfigureIdentity();
+builder.Services.AddJwtConfiguration(builder.Configuration);
+builder.Services.ConfigureJWT(builder.Configuration);
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureVersioning();
