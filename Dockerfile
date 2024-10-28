@@ -12,5 +12,4 @@ WORKDIR /publish
 COPY --from=build-image /publish .
 
 ENV ASPNETCORE_URLS=https://+:5001;http://+:5000
-ENV ASPNETCORE_ENVIRONMENT=Production
 ENTRYPOINT ["dotnet", "CompanyEmployees.dll"]

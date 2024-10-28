@@ -12,12 +12,13 @@ using CompanyEmployees.Presentation.ActionFilters;
 using CompanyEmployees.Utility;
 using AspNetCoreRateLimit;
 using System.Reflection.Metadata.Ecma335;
+using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
+/*builder.WebHost.UseUrls("https://0.0.0.0:5001", "http://0.0.0.0:5000");*/
 
-builder.WebHost.UseUrls("https://0.0.0.0:5001", "http://0.0.0.0:5000");
-
-LogManager.Setup().LoadConfigurationFromFile(Path.Combine(Directory.GetCurrentDirectory(), "nlog.config"));
+LogManager.Setup().LoadConfigurationFromFile
+    (Path.Combine(Directory.GetCurrentDirectory(), "nlog.config"));
 builder.Services.ConfigureLoggerService();
 
 builder.Services.ConfigureIISIntegration();
@@ -42,17 +43,8 @@ builder.Services.AddMemoryCache();
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.Configure<ApiBehaviorOptions>(options =>
+builder.Services.AddControllers(config => 
 {
-    options.SuppressModelStateInvalidFilter = true;
-});
-
-builder.Services.AddScoped<ValidationModelAttribute>();
-builder.Services.AddScoped<ValidateMediaTypeAttribute>();
-builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
-builder.Services.AddScoped<IEmployeeLinks, EmployeeLinks>();
-
-builder.Services.AddControllers(config => {
     config.RespectBrowserAcceptHeader = true;
     config.ReturnHttpNotAcceptable = true;
     config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
@@ -65,9 +57,18 @@ builder.Services.AddControllers(config => {
 .AddCustomCSVFormatter()
 .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
 
+builder.Services.Configure<ApiBehaviorOptions>(options 
+    => options.SuppressModelStateInvalidFilter = true);
+
+builder.Services.AddScoped<ValidationModelAttribute>();
+builder.Services.AddScoped<ValidateMediaTypeAttribute>();
+builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+builder.Services.AddScoped<IEmployeeLinks, EmployeeLinks>();
+
 builder.Services.AddCustomMediaTypes();
 //---------
-var app = builder.Build();
+WebApplication app = builder.Build();
+/*app.MigrateDatabase();*/
 
 var logger = app.Services.GetRequiredService<ILoggerManager>();
 app.ConfigureExceptionHandler(logger);
@@ -97,7 +98,7 @@ app.UseHttpCacheHeaders();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-app.Run();
+app.MigrateDatabase().Run();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter()
 {
